@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/world-update/(.*)",
+      "destination": "/$1"
+    },
+    {
+      "source": "/world-update",
+      "destination": "/"
+    }
+  ]
+}

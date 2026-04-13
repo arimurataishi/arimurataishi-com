@@ -8,5 +8,12 @@
       "source": "/world-update",
       "destination": "/"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.youtube.com/@ArimuraTaishi12", 
+      "permanent": false
+    }
   ]
 }

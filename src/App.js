@@ -22,11 +22,11 @@ const AUDIO_CONFIG = {
 };
 
 const FACTS = [
-  { text: "世界中で約88万kWhの電力が新たに発電されました。", icon: (s) => <Zap size={s} /> },
-  { text: "天の川銀河が宇宙空間を約600km移動しました。", icon: (s) => <Infinity size={s} /> },
-  { text: "地球の自転により赤道上の地点が約460メートル移動しました。", icon: (s) => <Globe size={s} /> },
+  { text: "世界中で約88万kWhの電力が発電されました。", icon: (s) => <Zap size={s} /> },
+  { text: "天の川銀河が約600km移動しました。", icon: (s) => <Infinity size={s} /> },
+  { text: "地球の自転により私たちが約460メートル移動しました。", icon: (s) => <Globe size={s} /> },
   { text: "ハワイが日本に約2.5ナノメートル近づきました。", icon: (s) => <Mountain size={s} /> },
-  { text: "南極の氷が新たに約4,800トン溶けて海に流れ出しました。", icon: (s) => <Droplets size={s} /> },
+  { text: "南極の氷が約4,800トン溶けて海に流れ出しました。", icon: (s) => <Droplets size={s} /> },
   { text: "宇宙の空間が新たに約67km膨張しました。", icon: (s) => <Rocket size={s} /> },
   { text: "地球が太陽の周りを約30km移動しました。", icon: (s) => <Globe size={s} /> },
   { text: "地球に約1,700兆ジュールの太陽光が届きました。", icon: (s) => <Sun size={s} /> },
@@ -36,13 +36,12 @@ const FACTS = [
   { text: "1京個の素粒子が宇宙から地球へ降り注ぎました。", icon: (s) => <Activity size={s} /> },
   { text: "太陽で6億トンの水素がヘリウムに変わりました。", icon: (s) => <Flame size={s} /> },
   { text: "宇宙を漂う彗星が約15kmの距離を旅しました。", icon: (s) => <Rocket size={s} /> },
-  { text: "10個の新しい星系が宇宙のどこかで形成されました。", icon: (s) => <Star size={s} /> },
+  { text: "10個の新しい星系が形成されました。", icon: (s) => <Star size={s} /> },
   { text: "アンドロメダ銀河が110km地球に近づきました。", icon: (s) => <Milestone size={s} /> },
-  { text: "世界の海から約1,600万トンの水が蒸発しました。", icon: (s) => <Droplets size={s} /> },
-  { text: "地球上のどこかで約100回の落雷が発生しました。", icon: (s) => <Zap size={s} /> },
+  { text: "海から約1,600万トンの水が蒸発しました。", icon: (s) => <Droplets size={s} /> },
+  { text: "約100回の落雷が発生しました。", icon: (s) => <Zap size={s} /> },
   { text: "世界の植物が約1,000トンの酸素を放出しました。", icon: (s) => <TreeDeciduous size={s} /> },
   { text: "世界の川から海へ100万立米の水が流れました。", icon: (s) => <Waves size={s} /> },
-  { text: "地球全体で1,000兆個の雨粒が地面に届きました。", icon: (s) => <CloudRain size={s} /> },
   { text: "太平洋のプレートが2ナノメートル移動しました。", icon: (s) => <Mountain size={s} /> },
   { text: "地球全体で約1,200トンの雨が降り注ぎました。", icon: (s) => <CloudRain size={s} /> },
   { text: "世界の樹木が2,000トンの二酸化炭素材を吸いました。", icon: (s) => <TreeDeciduous size={s} /> },
@@ -53,11 +52,16 @@ const FACTS = [
   { text: "世界中で4.3人の新しい命が誕生しました。", icon: (s) => <Baby size={s} /> },
   { text: "ヒトの体内で約200万個の赤血球が作られました。", icon: (s) => <Heart size={s} /> },
   { text: "世界中の鶏が合計で1.5万個の卵を産みました。", icon: (s) => <Utensils size={s} /> },
-  { text: "世界のミツバチが100万回の受粉を助けました。", icon: (s) => <Zap size={s} /> },
-  { text: "世界中の猫が合計10万回も喉を鳴らしました。", icon: (s) => <Heart size={s} /> },
   { text: "世界中で約2万杯のコーヒーが淹れられました。", icon: (s) => <Coffee size={s} /> },
   { text: "SNSで約100万件の「いいね」が押されました。", icon: (s) => <Heart size={s} /> },
-  { text: "Googleで10万件の検索が新しく行われました。", icon: (s) => <Search size={s} /> }
+  { text: "Googleで10万件の検索が新しく行われました。", icon: (s) => <Search size={s} /> },
+  { text: "スマートフォンが約46台製造されました。", icon: (s) => <Smartphone size={s} /> },
+  { text: "約350万通のメールが送信されました。", icon: (s) => <Mail size={s} /> },
+  { text: "世界中で約2万杯のコーヒーが淹れられました。", icon: (s) => <Coffee size={s} /> },
+  { text: "世界中のパン屋で約5万斤 of パンが焼き上がりました。", icon: (s) => <Utensils size={s} /> },
+  { text: "YouTubeに約8.3時間分の動画が投稿されました。", icon: (s) => <Camera size={s} /> },
+  { text: "世界中で約3台の新しい自動車が製造されました。", icon: (s) => <Truck size={s} /> },
+  { text: "世界のどこかで約3つの新しい建物が完成しました。", icon: (s) => <Milestone size={s} /> },
 ];
 
 const SYSTEM_LOGS = ["DATA_RANDOMIZING", "PLANETARY_SYNC", "LIFE_SCAN_ACTIVE", "ORBITAL_VELOCITY_OK", "EVOLUTION_LOG", "SPACE_METRICS"];

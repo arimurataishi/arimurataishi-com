@@ -24,7 +24,6 @@ const AUDIO_CONFIG = {
 const FACTS = [
   { text: "世界中で約88万kWhの電力が発電されました。", icon: (s) => <Zap size={s} /> },
   { text: "天の川銀河が約600km移動しました。", icon: (s) => <Infinity size={s} /> },
-  { text: "地球の自転により私たちが約460メートル移動しました。", icon: (s) => <Globe size={s} /> },
   { text: "ハワイが日本に約2.5ナノメートル近づきました。", icon: (s) => <Mountain size={s} /> },
   { text: "南極の氷が約4,800トン溶けて海に流れ出しました。", icon: (s) => <Droplets size={s} /> },
   { text: "宇宙の空間が新たに約67km膨張しました。", icon: (s) => <Rocket size={s} /> },
@@ -40,7 +39,7 @@ const FACTS = [
   { text: "アンドロメダ銀河が110km地球に近づきました。", icon: (s) => <Milestone size={s} /> },
   { text: "海から約1,600万トンの水が蒸発しました。", icon: (s) => <Droplets size={s} /> },
   { text: "約100回の落雷が発生しました。", icon: (s) => <Zap size={s} /> },
-  { text: "世界の植物が約1,000トンの酸素を放出しました。", icon: (s) => <TreeDeciduous size={s} /> },
+  { text: "世界の植物が1000トンの酸素を放出しました。", icon: (s) => <TreeDeciduous size={s} /> },
   { text: "世界の川から海へ100万立米の水が流れました。", icon: (s) => <Waves size={s} /> },
   { text: "太平洋のプレートが2ナノメートル移動しました。", icon: (s) => <Mountain size={s} /> },
   { text: "地球全体で約1,200トンの雨が降り注ぎました。", icon: (s) => <CloudRain size={s} /> },

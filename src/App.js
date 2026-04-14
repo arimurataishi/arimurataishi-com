@@ -58,7 +58,7 @@ const FACTS = [
   { text: "スマートフォンが約46台製造されました。", icon: (s) => <Smartphone size={s} /> },
   { text: "約350万通のメールが送信されました。", icon: (s) => <Mail size={s} /> },
   { text: "世界中で約2万杯のコーヒーが淹れられました。", icon: (s) => <Coffee size={s} /> },
-  { text: "世界中のパン屋で約5万斤 of パンが焼き上がりました。", icon: (s) => <Utensils size={s} /> },
+  { text: "世界中のパン屋で約5万斤のパンが焼き上がりました。", icon: (s) => <Utensils size={s} /> },
   { text: "YouTubeに約8.3時間分の動画が投稿されました。", icon: (s) => <Camera size={s} /> },
   { text: "世界中で約3台の新しい自動車が製造されました。", icon: (s) => <Truck size={s} /> },
   { text: "世界のどこかで約3つの新しい建物が完成しました。", icon: (s) => <Milestone size={s} /> },

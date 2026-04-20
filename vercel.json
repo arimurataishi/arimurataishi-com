@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/concept-calculator",
+      "destination": "/concept-calculator/index.html"
+    },
+    {
+      "source": "/concept-calculator/",
+      "destination": "/concept-calculator/index.html"
+    },
+    {
       "source": "/world-update/(.*)",
       "destination": "/$1"
     },
@@ -12,7 +20,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "https://www.youtube.com/@ArimuraTaishi12", 
+      "destination": "https://www.youtube.com/@ArimuraTaishi12",
       "permanent": false
     }
   ]

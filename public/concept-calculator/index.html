@@ -1582,6 +1582,10 @@
     if (flipper.classList.contains('entering') || flipper.classList.contains('pre-entrance')) {
       return;
     }
+    // A flip (open or close) is already in progress — ignore to prevent state corruption
+    if (flipper.classList.contains('flipping')) {
+      return;
+    }
     // direction: 'right' rotates rightward (rotateY negative), 'left' rotates leftward (positive)
     flipper._dir = direction === 'right' ? 'right' : 'left';
     // Make the target overlay the active back face
@@ -1731,6 +1735,10 @@
   function closeOverlay(name, direction) {
     const flipper = document.getElementById('flipper');
     if (!flipper) return;
+    // Already closing/opening — ignore
+    if (flipper.classList.contains('flipping')) {
+      return;
+    }
     flipper.classList.add('flipping');
     // direction optional: 'through-left' or 'through-right' continues the rotation; else reverses
     if (direction === 'through-left' || direction === 'through-right') {
